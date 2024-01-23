@@ -1,0 +1,48 @@
+Microsoft Azure Blobs
+are files for the Cloud. The term BLOB is an acronym
+for Binary Large Object. Apps work with Blobs in much the same way as they would work with files on a disk, like reading and writing data. Unlike a local file, Blobs can be reached from anywhere with an
+Internet connection. Azure Blob Storage
+is unstructured, meaning that there
+are no restrictions on the kind of data it can hold. For example, a Blob can
+hold a PDF document, a JPEG image, a JSON file, video content, and so on. Blobs aren't limited to
+common file formats. A Blob could contain
+gigabytes of binary data streamed from
+a scientific instrument, an encrypted message for
+another application, or data in a custom format
+for an app you're developing. Blobs are usually
+not appropriate for structured data that needs
+to be queried frequently. They have higher latency than memory and local
+disk and don't have the indexing features that make databases efficient
+at running queries. Blob Storage is
+ideal for storing up to eight terabytes of data
+for virtual machines, storing data for analysis by an On-premises or Azure
+hosting service, storing data for backup and restore disaster
+recovery and archiving. Streaming video and audio, storing files for
+distributed access, and serving images or documents
+directly to a browser. Many Azure components use
+Blobs behind the scenes. For example, Azure Cloud Shell stores your files
+and configuration in Blobs and Azure Virtual Machines uses Blobs for
+hard disk storage. Also, Blobs are frequently
+used in combination with databases to store
+non-query-able data. For example, an app
+with a database of user profiles could store
+profile pictures in Blobs. Each user record in the
+database would include the name or URL of the Blob containing
+the user's picture. In Blob Storage, every Blob lives inside
+a Blob container. You can store an unlimited
+number of Blobs in a container and an unlimited number of containers in a storage account. Remember that
+containers are flat. They can only store Blobs,
+not other containers. Blobs and containers
+support metadata in the form of
+name-value string pairs. Your apps can use metadata
+for anything you like. A human-readable description of a Blob's contents
+to be displayed by the app or a string
+that your app uses to determine how to process
+the Blob's data and so on. Finally, Blob Storage
+does not provide any mechanism for searching
+or sorting Blobs by metadata. For information about using
+Azure Cognitive Search, at the end of this module, see the further reading section. The Blob Storage API
+is REST-based and supported by client libraries
+in many popular languages. It lets you write apps that create and delete
+Blobs and containers, upload and download Blob data, and lists the Blobs
+in a container.

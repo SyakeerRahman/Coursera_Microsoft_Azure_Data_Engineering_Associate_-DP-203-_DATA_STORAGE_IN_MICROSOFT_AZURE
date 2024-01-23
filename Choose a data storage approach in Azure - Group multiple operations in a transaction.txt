@@ -1,0 +1,83 @@
+Applications may need to group a series of data
+updates together. Because a changed
+one piece of data needs to result in a change
+to another piece of data. Transactions enable you
+to group these updates so that if one event in a
+series of updates fails, the entire series can be
+rolled back or undone. For example, as an
+online retailer, you might use a transaction for the placement of an order
+and payment verification. The grouping of
+the related events ensures that you don't reduce your inventory levels until an approved form of
+payment is received. Here, you'll learn about transactions and whether
+they're required for your data. A transaction is a
+logical group of database operations
+that execute together. Here's the question to ask
+yourself regarding whether you need to use transactions
+in your application; will a change to one piece of data in your data
+set impact another? If the answer is yes, then you'll need support for transactions in your
+database service. Transactions are often
+defined by a set of four requirements referred
+to as ACID guarantees. ACID stands for atomicity, consistency, isolation,
+and durability. Atomicity means a
+transaction must execute exactly once
+and must be automic, either all of the work is
+done or none of it is. Operations within a
+transaction usually share a common intent
+and are interdependent. Consistency ensures
+that the data is consistent both before and
+after the transaction. Isolation ensures
+that one transaction is not impacted by
+another transaction. Durability means that
+the changes made due to the transaction are permanently saved in the system. Committed data is saved
+by the system so that even in the event of a
+failure and system restart, the data is available
+in its correct state. When a database offers
+ACID guarantees, these principles are applied to any transactions in
+a consistent manner. The databases that
+a business uses to store all its
+transactions and records are called online transaction
+processing, OLTP databases. While Online
+Analytical Processing, OLAP is a technology
+that organizes large business databases and
+supports complex analysis. OLTP systems commonly
+support lots of users and handle large volumes of data inserts and updates. They can be made
+highly available, meaning they have very minimal
+downtime and typically handle small or relatively
+simple transactions. On the contrary, OLAP
+can be used to perform complex analytical
+queries without negatively affecting
+transactional systems. OLAP is ideal for data mining,
+business intelligence, and complex analytical
+calculations, as well as
+business-reporting functions like financial analysis, budgeting, and
+sales forecasting. The terms OLTP and OLAP aren't used as frequently
+as they used to be, but understanding
+that makes it easier to categorize the needs
+of your application. Now, let's walk through
+each of the datasets in the online retail scenario and determine the need
+for transactions. Product catalog data should be stored in a
+transactional database. When users place an order
+and the payment is verified, the inventory for the
+item should be updated. Likewise, if the customer's
+credit card is declined, the order should
+be rolled back and the inventory should
+not be updated. These relationships all
+require transactions. Photos and videos in a product catalog don't
+require transactional support. These files are
+changed only when an update is made or
+new files are added. Even though there is a
+relationship between the image and the
+actual product data, it's not transactional
+in nature. For the business data, because all of the data is
+historical and unchanging, transactional support
+is not required. The business analysts
+working with the data also have unique needs
+in that they often require working with
+aggregates in their queries so that they can work
+with the totals of other smaller data points. For example, an analyst may
+want to compare sales by region over specific time
+period for comparison purposes. Ensuring that your data is in the correct state is not
+always an easy task. Transactions can
+help by enforcing data integrity
+requirements on your data. If your data benefits
+from ACID principles, then choose a storage solution that supports transactions.

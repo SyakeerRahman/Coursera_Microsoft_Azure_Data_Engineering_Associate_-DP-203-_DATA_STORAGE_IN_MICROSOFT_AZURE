@@ -1,0 +1,144 @@
+An online retail business
+has different types of data. Each type of data may benefit from a different
+storage solution. Application data can be
+classified in one of three ways. Structured, semi-structured,
+and unstructured. Let's start by looking
+at structured data. Structured data,
+sometimes referred to as relational data, is data that adheres
+to a strict schema. All of the data has the
+same fields or properties. The shared schema allows this
+type of data to be easily searched with query
+languages such as SQL or structured
+query language. This capability makes
+this data style perfect for applications
+such CRM systems, reservations, and
+inventory management. Structured data is
+often stored in database tables with
+rows and columns with key columns to indicate
+how one row in a table relates to data in
+another row of another table. For example, you could have
+a table of students and a table of courses
+with a relationship to grades that tie
+them together. Structured data is
+straightforward in that it's easy to enter
+query and analyze. All of the data follows
+the same format. However, forcing a
+consistent structure also means that
+evolution of the data is more difficult as each record has to be updated to conform
+to the new structure. For example, when a new column is required and
+added to the table, all existing rows will be
+affected by the new column. Now, onto semi-structured data. This data is less organized than structured data and is not
+stored in a relational format, as the fields do not neatly fit into tables,
+rows and columns. Semi-structured data
+contains tags that make the organization and
+hierarchy of the data apparent. For example, key-value pairs. Semi-structured data
+is also referred to as non-relational or NoSQL data. The expression and
+structure of the data in this style is defined by
+a serialization language. Data serialization languages are an effective way to exchange semi-structured data
+across systems. Using standardized
+well-documented syntax, these languages allow
+data to be shared across systems with different
+underlying infrastructure, such as between a mobile
+device and a website. For software developers, data
+serialization languages are particularly important
+because they can be used to write data stored
+in memory to a file, then sent to another system, and then parsed
+and read in again. These languages include JSON or JavaScript Object Notation, XML or Extensible
+Markup Language, and YAML or YAML Ain't
+Markup Language. XML was one of the first data languages to
+receive widespread support. Its tech space, which makes it easily human and
+machine readable. In addition, parsers
+for it can be found in almost all popular
+development platforms. XML allows you to express relationships and has
+standards for schema, transformation and even
+displaying on the web. Let's review an example of a person with hobbies
+expressed in XML. XML expresses the shape
+of the data using tags. These tags come in two forms, elements such as firstName
+and attributes that can be expressed in texts
+like age equals 23. Elements can have child elements to express relationships. For example, a hobbies
+tag could have different child
+elements expressing a collection of hobby elements. XML is flexible and can
+express complex data easily. However, it tends
+to be more verbose, making it larger to store
+process or pass over a network. As a result, other formats
+have become more popular. JSON has a lightweight
+specification, and relies on curly braces
+to indicate data structure. Compared to XML, it is less verbose and easier
+for humans to read. JSON is frequently used by
+web services to return data. Let's look at the
+earlier example of a person with hobbies, this time expressed in JSON. The JSON format isn't
+as formal as XML. It's closer to a
+key-value pair model than a formal data expression. As you might guess from the name JavaScript Object
+Notation, JSON. JavaScript has built-in
+support for this format, making it very popular
+for web development. Like XML, other languages have parsers you can use to work
+with this data format. The downside to JSON is that it tends to be more
+programmer-oriented, making it harder for
+non-technical people to read and modify. YAML is a relatively
+new data language that's growing quickly in popularity in part due
+to its human friendliness. The data structure is defined by line separation and
+indentation and reduces the dependency on
+structural characters like parentheses,
+commas, and brackets. Let's look at the
+earlier example of a person with hobbies, this time expressed in YAML. This format is more readable than JSON and is often used for configuration files
+that need to be written by people but
+parsed by programs. However, YAML is the newest of these data formats
+and doesn't have as much support in programming
+languages as JSON and XML. The organization of
+unstructured data is ambiguous. Unstructured data
+is often delivered in files such as
+photos or videos. The video file itself may have an overall structure and come with semi-structured
+metadata, but the data that comprises the video itself
+is unstructured. Examples of unstructured
+data include, media files such
+as photos, videos, and audio files, office files
+such as Word documents, text files, and log files. Now that you know the
+differences between the three
+classifications of data, let's look at three
+data-sets used in an online retail
+business and classify them. You'll review product
+catalog data, photos and videos,
+and business data. Product catalog data for an online retail
+business is fairly structured in nature as each product has a product
+stock keeping unit, or SKU, a description,
+a quantity, a price, size options, color options, a photo, and possibly a video. You could have data that appears to be relational
+to start with, as it has all the
+same structure. However, as you introduce new products or different
+kinds of products, you may want to add different
+fields as time goes on. For example, the
+new tennis shoes you're carrying out your store, are Bluetooth-enabled to relay sensor data from the shoe to a fitness app on
+the user's phone. This appears to be a growing trend and you
+want to enable customers to filter on Bluetooth-enabled
+shoes in the future. You don't want to
+go back and update all your existing shoe data with a Bluetooth-enabled
+property, you simply want to
+add it to new shoes. With the addition of the
+Bluetooth-enabled property, your shoe data is no longer homogeneous as you've introduced differences in the schema. If this is the only exception
+you expect to encounter, you can go back and normalize the existing data so that
+all products include a Bluetooth-enabled field to maintain a structured
+relational organization. However, if this is just one of the many specialty fields that you envision
+supporting in the future, then the classification of
+the data is semi-structured. The data is organized by tags, but each product in the catalog can contain unique fields. Now, let's look at
+an example of how the data from photos and
+videos are classified. The photos and
+videos displayed on product pages are
+unstructured data. Although the media file
+may contain metadata, the body of the media
+file is unstructured. You have looked at examples of data classification for products in an online product catalog, as well as photos and videos. Now, let's look at what you
+need for business data. Business analysts want to implement business
+intelligence to perform inventory pipeline evaluations
+and sales data reviews. In order to perform
+these operations, data from multiple
+months needs to be aggregated together
+and then queried. Because of the need to
+aggregate similar data, this data must be structured so that one month can be
+compared against the next. In this lesson, you
+learned that data may be classified in
+one of three ways. Structured, semi-structured,
+and unstructured. Understanding the differences
+so that you can classify your own data will help you choose the correct
+storage solution. To recap, structured
+data is organized data that neatly fits into
+rows and columns in tables. Semi-structured data is still organized and has clear
+properties and values, but there's variety to the data. Unstructured data doesn't
+fit neatly into tables, nor does it have a schema.

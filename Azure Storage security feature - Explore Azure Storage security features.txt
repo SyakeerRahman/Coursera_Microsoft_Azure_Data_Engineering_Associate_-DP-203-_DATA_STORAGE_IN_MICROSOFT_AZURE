@@ -1,0 +1,55 @@
+Contoso relies heavily on massive amounts
+of data in Microsoft Azure storage. Contoso's as many applications rely
+on blobs on structured table storage. Azure Data Lake and server message block,
+or SMB-based file shares. After Contoso's competitor
+has a data breach. Contoso tasks the network administrator to
+check the organization's data security. As Contoso's is data consultant, you assure the network administrator that
+Azure storage accounts provide several high level security benefits for
+the data in the cloud. Protect the data at rest,
+protect the data in transit. Support browser cross domain access. Control who can access data. And audit storage access. Now you will look at different
+forms of encryption, starting with encryption at rest. All data written to Azure storage is
+automatically encrypted by storage, service encryption or SSE. With a 256-bit advanced encryption
+standard or AES cipher. And his FIPS 140-2 compliant. And SSE automatically encrypts data
+when writing it to Azure storage. And when you read data from Azure storage, Azure storage decrypt
+the data before returning it. This process incurs no additional
+charges and doesn't degrade performance. It can't be disabled. For virtual machines or VMS, Azure
+lets you encrypt virtual hard disks or VHDs by using Azure disk encryption. And this encryption uses bit locker for
+Windows images or DM-script for Linux. Azure key vault stores the keys
+automatically to help you control and manage the disk encryption keys and
+secrets. So even if someone gets access
+to the VHD image and downloads, they can't access the data on the VHD. Keep your data secure by enabling
+transport level security between Azure and the client. And always use https to secure
+communication over the public internet. When you call the rest APIs to access
+objects in storage accounts, you can enforce the use of https by requiring
+secure transfer for the storage account. After you enable secure transfer,
+connections that use http will be refused. And this flag will also enforce
+secure transfer over SMB by requiring SMB 3.0 for
+all file share amounts. Let's see how CORS support works. Contoso stores several website
+acid types in Azure storage. These types include images and videos. To secure browser apps Contoso locks
+get requests down to specific domains. Azure storage supports cross
+domain access through cross origin resource sharing or CORS. CORS uses http headers so
+that a web application at one domain can access resources from a server
+at a different domain. Finally, using CORES web apps ensures that
+they load only authorized content from authorized sources. CORS support is an optional flag
+you can enable on storage accounts. The flag as the appropriate headers when
+you use http get requests to retrieve resources from the storage account. Next we will look at how to work with
+RBAC or role based access control. To access data in a storage account, the
+client makes a request over http or https. Every request to a secure
+resource must be authorized. The service ensures that the client
+has the permissions required to access the data. You can choose from
+several access options. Arguably the most flexible
+option is role based access. Azure storage supports Azure Active
+Directory and role based access control. Or RBAC for both resource management and
+data operations. To security principles you can assign
+RBAC roles that are scoped to the storage account. Use Active Directory to authorize
+resource management operations such as configuration. Finally, Active Directory is supported for
+data operations on blob and queue storage. To a security principle or
+a managed identity for Azure resources, you can assign RBAC roles that are scoped
+to a subscription, a resource group, a storage account and
+an individual container or queue. Auditing is another part
+of controlling access. You can audit Azure storage access by
+using the built in storage analytics service. Storage analytics,
+logs every operation in real time. And you can search the storage
+analytics logs for specific requests. Filter based on
+the authentication mechanism, the success of the operation and
+the resource that was accessed.

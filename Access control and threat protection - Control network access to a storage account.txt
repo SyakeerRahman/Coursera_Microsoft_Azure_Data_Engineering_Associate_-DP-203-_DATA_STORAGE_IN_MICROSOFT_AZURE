@@ -1,0 +1,22 @@
+By default, storage accounts accept connections from
+clients on any network. To limit access to
+selected networks, you must first change
+the default action. You can restrict access
+to specific IP addresses, ranges and virtual networks. Be careful as changing
+network rules can affect your application's ability
+to connect to Azure Storage. If you set the default
+network rule to deny, you'll block all access
+to the data unless specific network
+rules grant access. Before you change the
+default rule to deny access, be sure to use network rules to grant access to any
+allowed networks. Next, explore the methods for managing default
+network access rules. You can manage default
+network access rules for storage accounts
+through the Azure portal. Using PowerShell
+and the Azure CLI. If you decide to use
+the Azure portal, then follow these steps to
+change default network access. Go to the storage
+account you want to secure, select Networking. To restrict traffic from selected networks, select
+Selected Networks. To allow traffic from all
+networks, select All Networks. Finally, to apply your
+changes, select Save.

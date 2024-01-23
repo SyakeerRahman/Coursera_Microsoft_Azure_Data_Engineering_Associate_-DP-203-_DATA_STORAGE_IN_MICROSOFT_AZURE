@@ -1,0 +1,29 @@
+Microsoft Azure Data
+Lake Storage Generation 2 or Gen2 provides a first-class data
+lake solution that enables enterprises to
+consolidate their data. It's built on Azure
+Blob Storage, so it inherits all the security features you
+reviewed in this module. Along with role-based
+access control or RBAC, Azure Data Lake Storage Gen2 provides Access Control Lists, ACLs, that are POSIX-compliant, and that restrict access
+to only authorized users, groups, or service principles. It applies restrictions
+in a way that's flexible, fine-grained,
+and manageable. Azure Data Lake Storage
+Gen2 authenticates through Azure Active Directory
+OAuth 2.0 bearer tokens. This allows for flexible
+authentication schemes, including federation with
+Azure AD Connect and multi-factor authentication
+that provides stronger protection
+than just passwords. More significantly, these
+authentication schemes are integrated into the main analytic services
+that use the data. These services include Azure
+Databricks, HDInsight, Azure Synapse Analytics, and management tools such as Azure Storage Explorer
+are also included. After authentication finishes,
+permissions are applied at the finest granularity to
+ensure the right level of authorization for an
+enterprise's big data assets. The Azure Storage end-to-end
+encryption of data and transport layer
+protections complete the security shield for
+an Enterprise Data Lake. The same set of
+analytics engines and tools can take advantage of these additional layers
+of protection resulting in complete protection of
+your analytics pipelines.

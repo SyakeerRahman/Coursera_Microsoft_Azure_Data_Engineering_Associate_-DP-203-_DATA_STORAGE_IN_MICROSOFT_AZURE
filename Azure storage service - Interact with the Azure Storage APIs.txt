@@ -1,0 +1,36 @@
+Let's look at how
+to interact with the Microsoft Azure
+Storage APIs. Azure storage provides
+a Rest API to work with the containers and
+data stored in each account. There are independent
+APIs available to work with each type
+of data you can store. Recall that we have four
+specific data types: blobs for unstructured data, such as binary and text files, queues for persistent messaging, tables for structured
+storage of key or values, and files for traditional
+SMB file shares. The storage Rest
+APIs are accessible from anywhere on the
+Internet by any app that can send a HTTP or HTTPS request and receive a
+HTTP or HTTPS response. For example, if you wanted to list all the blobs
+in a container, you would send a
+simple GET command. This would return an XML block with data specific
+to the account. However, this approach requires a lot of manual parsing and the creation of HTTP packets
+to work with each API. For this reason, Azure provides pre-built
+client libraries that make working
+with the service easier for common
+languages and frameworks. Next, investigate how to make
+use of a client library. Client libraries can save a
+significant amount of work for app developers because
+the API is tested, and it often provides
+nicer wrappers around the data model sent and
+received by the Rest API. Microsoft has Azure
+client libraries that support several
+languages and frameworks, including.Net, Java,
+Python, Node.js, and Go. For example, to retrieve the same list of
+blobs in C Sharp, we could use a code snippet or perform a similar
+action in JavaScript. The client libraries are just thin wrappers
+over the Rest API. They are doing exactly
+what you would do if you use the web
+services directly. These libraries are
+also open source, making them very transparent. For links to the source code for these libraries on GitHub
+at the end of this module, see the additional
+resources section.

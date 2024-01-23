@@ -1,0 +1,163 @@
+Hello and welcome.
+In this lesson, you will review the
+key concepts of data storage in
+Microsoft Azure and use this opportunity to focus
+on achieving mastery before you test your
+knowledge in a practice exam. By now, you should have
+a good understanding of which storage
+solution is best to meet the requirements for
+your various datasets. You've explored the key
+factors to consider when deciding on the
+optimal storage solution, such as how to
+classify your data, how your data will be used, and how you can get
+the best performance for your application. You learned that
+application data can be classified in one of three ways; structured, semi-structured,
+and unstructured. You also learned that
+an effective way to exchange semi-structured
+data across systems, is through data
+serialization languages such as JSON, XML, and YAML. To determine the best solution, you consider the data type, the operations required,
+expected latency, and transactional
+support requirements. Transactions are often defined by a set of four requirements; the ACID guarantees, atomicity, consistency, isolation,
+and durability. When a database offers
+ACID guarantees, these principles are applied to transactions in a
+consistent manner. Next, you explored
+various Azure services, you learned that with
+Azure SQL Database, you can combine structured
+data in columns and semi-structured data in
+easily extended JSON columns. By pairing SQL Database with
+Azure Analysis Services, you can create a semantic
+model over SQL Database data, and Microsoft's Azure
+Cosmos DB support semi-structured data or
+NoSQL data by design. Cosmos DB is also acid
+compliant and support SQL. You saw that Azure
+Blob Storage supports storing files such as
+photos and videos. It allows you to
+move images from the hot storage tier to the
+cool or archive storage tier, reducing costs and focusing throughput on the most
+viewed images and videos. Azure Blob service also works with Azure Content
+Delivery Network, CDN, caching the
+most used content and storing is on Edge servers. Azure CDN reduces latency delivering those
+images to users. Other Azure services such
+as Azure Table storage, Azure HBase as a
+part of HDInsight, and Azure Cache for Redis
+can also store NoSQL data. Next, you looked at
+storage accounts. A storage account is
+an Azure resource and included in a
+resource group. An Azure subscription can contain multiple
+resource groups. Each group contains one
+or more storage accounts. Storage accounts
+typically include blobs, files, queues, and tables. While services such as SQL and
+Cosmos DB are independent, storage account settings
+are; subscription, location, performance,
+replication, access tier, secure transfer required
+on virtual networks. The number of storage
+accounts needed is determined by data diversity, cost sensitivity, and tolerance
+for management overhead. Normally, an increase
+in diversity means it increased number
+of storage accounts. There are several
+tools that create a storage account
+including Azure Portal, Azure CLI, Azure PowerShell and Management Client Libraries. Next, you learned that Microsoft Azure storage is a managed service
+providing durable, secure, and scalable
+client storage. You reviewed the four types
+of Azure Data Services; Azure Blob Storage, Azure Files, Azure Queue Service and
+Azure Table Storage. Then you discovered the
+Azure Storage provides a rest API to operate on Containers and data
+in each account. Next, you learned that
+Microsoft Azure has Client Libraries Supporting several languages
+and frameworks, allowing app developers
+to work much faster and investigated using Client
+Libraries when using APIs. You learn to connect an app to an Azure storage account using an access key and a
+rest API endpoint. The simplest way to handle
+access keys and endpoint URLs within applications is using storage account
+connection strings. A single text string provides full
+connectivity information. You explored the maintenance
+of secure access keys, learning to follow
+best practices when maintaining
+secure access keys, such as withholding keys
+from unauthorized accounts, rotate keys for added
+security and maintain a secure account with
+shared access signatures, offering a separate
+authentication mechanism. Then you looked at different
+forms of encryption, such as Storage Service
+Encryption or SSE, which automatically
+encrypts data and enables transport level security
+between Azure and the client. You should recall that to access data in a
+storage account, the client makes a request
+over HTTP or HTTPS. Every request to
+a secure resource and must be authorized. The service ensures
+that the client has the permissions required
+to access the data. You can choose from
+several access options. Arguably the most flexible
+option is role-based access. Azure Storage supports
+Azure Active Directory and role-based access control, or RBAC, for both
+resource management and data operations. To security principles,
+you can assign our back roles that are scoped
+to the storage account. Use Active Directory
+to authorize resource management operations
+such as configuration. Finally, Active Directory
+is supported for data operations on blob
+and queue Storage. You learned that the built-in
+Storage Analytics service or it's Azure Storage Access. Storage Analytics logs every
+operation in real time. The logs can be
+searched and filtered based on the
+authentication mechanism, the success of the operation, and the resource
+that was accessed. Next, you explored
+Microsoft Azure Storage, multiple authentication
+approaches including authorized apps and shared keys. Each storage account has two access keys to
+ally keys to be rotated or regenerated as part
+of security best practice. Here you developed
+an understanding of threat protection
+and learned how to control network access within the Microsoft Azure environment. As a best practice,
+you shouldn't share Storage Account Keys with external third-party
+applications. If these apps need
+access to your data, then you'll need to secure their connections without
+using storage account keys. For untrusted clients, use a shared access
+signature or SAS. The SAS is a string
+that contains a security token that can
+be attached to a URI. You use an SAS to delegate
+access to storage objects and specify constraints such as the permissions and the
+time range of access. By default, storage accounts accept connections from
+clients on any network. To limit access to
+selected networks, you must first change
+the default action. You can restrict access
+to specific IP addresses, ranges, and virtual networks. You can manage default network access rules
+for storage accounts through the Azure portal using PowerShell and the Azure CLI. Next, you learned that
+Microsoft Azure Defender for Storage provides an
+extra layer of security, detecting suspect attempts to access or exploit
+storage accounts. This Protection
+allows you to address threats without having
+security expertise. Security alerts are triggered when anomalies inactivity occur. And the security alerts
+are integrated with Azure Security Center
+and are also send via e-mail to subscription
+administrators with details of suspicious activity
+and recommendations on how to investigate and
+remediate threats. You should remember that
+Azure Data Lake Storage, contains security
+features such as authentication schemes
+integrated into the main analytic services. These services include Azure
+Databricks, HDInsight, Azure Synapse Analytics, and management tools such as Azure Storage Explorer
+are also included. Finally, you learned
+the blobs give you file storage to organize
+your data in the Cloud, and an API to build apps. The Blob Storage API
+is REST-based and supported by Client Libraries
+in many popular languages. It lets you write apps that create and delete
+blobs and Containers, upload and download blob data and list the
+blobs in a container. When designing an app
+that needs to store data, think about how the app is
+going to organize data across Microsoft Azure Storage
+Accounts, Containers, and Blobs. A single storage
+account is flexible enough to organize your
+blobs however you like. You should use additional
+storage accounts as necessary to logically separate costs and control
+access to data. The storage service offers three types of
+blobs: block blobs, append blobs, and page blobs. You specify the blob type
+when you create the blob. Once the blob has been created, it's type cannot be changed
+and it can be updated only by using operations
+appropriate for that blob type. For example, writing a block or a list of blocks
+to a block blob, appending blocks
+to an append blob and writing pages
+to a page blob. Next, you have an
+opportunity to take the practice exam and
+check your progress on data storage in Microsoft
+Azure putting you in good shape for certification
+success. Good luck.

@@ -1,0 +1,93 @@
+Let's start by taking a quick look
+at Microsoft Azure storage services, data styles and accounts. Microsoft Azure storage is a managed
+service that provides durable, secure and scalable storage in the cloud. Let's break these terms down. By durable, this means that the redundancy
+ensures that your data is safe in the event of transient hardware failures. You can also replicate data across data
+centers or geographical regions for extra protection from local catastrophe or
+natural disaster. Data replicated in this way remains highly
+available in the event of an unexpected outage. In terms of security, all data written to Azure storage is
+encrypted by the service as your storage provides you with fine grained control
+over who has access to your data. When it comes to scalability,
+Azure storage is designed to be massively scalable to meet the data storage and
+performance needs of today's applications. With regards to management,
+Microsoft Azure handles maintenance and any critical problems for you. A single Azure subscription can
+host up to 200 storage accounts, each of which can hold
+500 terabytes of data. Azure storage includes four types of data. There are Blobs which are massively
+scalable object store for text and binary data. These can include support for
+Azure data lake storage gentoo. Another data type is managed file shares
+for cloud or on premises deployments. A third type includes queues
+which are a messaging store for reliable messaging between
+application components. And there is table storage or
+a no sequel store for schema less storage of structured data. Note, the table storage is
+not covered in this lesson. All these data types in Azure storage are accessible from anywhere in
+the world over HTTP or HTTPS. Microsoft provides software
+development kits or SDK for Azure storage in various languages and
+arrest API. You can also visually explore your
+data right in the Azure portal. Azure blob storage is an object
+storage solution optimized for storing massive amounts of unstructured
+data, such as text or binary data. Blob storage is ideal for serving images
+or documents directly to a browser, including full static websites,
+storing files for distributed access, streaming video and audio,
+storing data for backup and restoration. Disaster recovery and
+archiving and storing data for analysis by on premises or
+Azure hosted service. Azure storage supports
+three kinds of blobs. Block blobs are used to hold text or
+binary files up to 5 terabytes, 50,000 blocks of 100 megabytes in size. Page blobs are used to hold random
+access files up to 8 terabytes in size. Finally, append blobs are made up
+of blocks like block blobs, but they are optimized for append operations. The primary use case for block blobs is
+the storage of files that are read from beginning to end, such as media files or
+image files for websites. And they are named block
+blobs because files larger than 100 megabytes must
+be uploaded a small blocks. These blocks are then consolidated or
+committed into the final blob. Page Blobs are used primarily as the
+backing storage for the virtual hard disks or VHDs used to provide durable discs for
+Azure virtual machines or Azure VMs. They are named page blobs because they
+provide random read write access to 512-byte pages. These blobs are frequently used for
+logging information from one or more sources into the same blob, and to
+give an example, you might write all your trace logging to the same append blob for
+an application running on multiple VMs. A single append blob can
+be up to 195 gigabyte. Next, we will explore
+Microsoft Azure files. Azure files enables you to set up highly
+available network file shares that can be accessed using the standard server
+message block or SMB protocol. This means that multiple VMs can share
+the same files with both read and write access. You can also read the files
+using the REST interface and the storage client libraries. Finally, you can also associate
+a unique URL to any file to allow fine grained access to a private file for
+a set period. File shares can be used for many common
+scenarios, storing shared configuration files for VMs, tools or utilities so
+that everyone is using the same version. Log files such as diagnostics,
+metrics and crash dumps and shared data between on
+premises applications and Azure VMs to allow migration of
+apps to the cloud over a period. Let's take a look at how
+the Azure Queue service works. The Azure Queue service is used
+to store and retrieve messages. Queue messages can be up
+to 64 kilobytes in size and a queue can contain millions of messages. Finally, queue are used to store lists of
+messages to be processed asynchronously. You can use queue to loosely connect
+different parts of your application together. For example, we could perform image processing on
+the photos uploaded by our users. Perhaps we want to provide some sort of
+face detection or tagging capability so people can search through all the images
+they have stored in our service. And we could use queues to pass messages
+to our image processing service to let it know that new images have been
+uploaded and are ready for processing. This sort of architecture
+would allow you to develop and update each part of
+the service independently. Next, you will learn how to
+create a storage account. An Azure storage account contains all of
+your Azure storage data objects blobs, file shares, queues, tables and disks. The storage account provides a unique
+name space for your Azure storage data that's accessible from anywhere
+in the world over http or https. Finally, data in your storage
+account is durable and highly available, secure and
+massively scalable. Azure storage offers several
+types of storage accounts. Each type supports different features and
+has its own pricing model. Finally, make sure that you consider these
+differences before you create a storage account to determine the type of account
+that's best for your applications. Standard General Purpose v2 is the
+standard storage account type for blobs, file shares, queues and tables, it is recommended from most
+scenarios using Azure storage. And the premium storage account type
+is for block blobs and a pen blobs, this is recommended for scenarios with
+high transaction rates, scenarios that use smaller objects or those that require
+consistently low storage latency. Premium storage account type is for
+file shares only. It is recommended for enterprise or
+high performance scale applications. This is useful if you require both SMB and
+NFS, file share support. Finally, the premium storage account
+type is for page blobs only. If you are interested in learning more
+about creating storage accounts, make sure to go through the create an Azure storage
+account module in the learning portal.

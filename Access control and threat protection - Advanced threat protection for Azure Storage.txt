@@ -1,0 +1,35 @@
+Microsoft Azure defender for storage
+provides an extra layer of security intelligence that detects unusual and
+potentially harmful attempts to access or exploit storage accounts. This layer of protection allows you to
+address threats without being a security expert or
+managing security monitoring systems. This does incur an additional cost
+with its own pricing structure. Security alerts are triggered
+when anomalies in activity occur. And these security alerts are integrated
+with Azure security center and are also sent via email to subscription
+administrators with details of suspicious activity and recommendations on how
+to investigate and remediate threats. Azure defender for storage is
+currently available for blob storage. Azure Files and
+Azure data Lake Storage Gen2. Account types that support Azure
+defender include general purpose V2, block blob, and blob storage accounts. And Azure defender for storage is
+available in all public clouds and US government clouds, but
+not in other sovereign or Azure government cloud regions. Accounts with hierarchical
+name spaces enabled for data lake storage support transactions
+using both the Azure blob storage APIs and the data lake storage APIs. And Azure file shares support
+transactions over SMB. You can turn on Azure defender for storage in the Azure portal through the
+configuration page of the Azure storage account or in the advanced security
+section of the Azure portal. To turn on Azure defender for
+storage, follow these steps, first launch the Azure portal. Next, navigate to your storage account,
+then under settings, select advanced security. Finally, select enable Azure defender for
+storage. So how does the Azure environment
+handle security anomalies? When storage activity anomalies occur,
+you receive an email notification with information about
+the suspicious security event. A typical email will include the nature
+of the anomaly, the storage account, name, the event time and
+storage type, potential causes, and guidance around investigation and
+remediation steps. Finally, the email will also include
+details about possible causes and recommended actions to investigate and
+mitigate the potential threat. You can review and
+manage your current security alerts from Azure security centers
+security alerts tile. Selecting a specific alert
+provides details and actions for investigating the current threat and
+addressing future threats.

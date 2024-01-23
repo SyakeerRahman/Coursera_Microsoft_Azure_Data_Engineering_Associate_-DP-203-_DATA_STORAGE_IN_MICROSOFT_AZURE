@@ -1,0 +1,43 @@
+Welcome back. In this lesson, you will develop
+an understanding of threat protection and learn how to control network access
+within the Microsoft Azure environment. As a best practice, you shouldn't share storage account keys
+with external third party applications. And if these apps need access to your
+data, then you'll need to secure their connections without using
+storage account keys. For untrusted client,
+use a Shared Access Signature or SAS. The SAS is a string that
+contains a security token that can be attached to a URL. And use an SAS to delegate
+access to storage objects. And specify constraints such as the
+permissions and the time range of access. You can give a customer an SAS token,
+for example, so they can upload pictures to
+a file system in blob storage. And separately you can give a web app
+permission to read those pictures. In both cases, you allow only the access
+that the application needs to do the task. As a best practice, you shouldn't share storage account keys
+with external third-party applications. And if these apps need access to
+your data, then you'll need to secure their connections without
+using storage account keys. For untrusted clients,
+use a Shared Access Signature or SAS. The SAS is a string that contains
+a security token that can be attached to a URL. And use an SAS to delegate
+access to storage objects and specify constraints such as the
+permissions and the time range of access. So now that you know what shared access
+signatures are, take a moment to explore two different types,
+service level SAS and account level SAS. And use an SAS to delegate
+access to storage objects and specify constraints such as the
+permissions and the time range of access. You can use a service-level SAS to
+allow access to specific resources in a storage account. And you would also use this
+type of SAS for example to allow an app to retrieve a list of files
+in a file system or to download a file. Use an account level SAS to allow access
+to anything that a service level SAS can allow plus additional resources and
+abilities. And you can use an account level SAS to
+allow the ability to create file systems. You typically use an SAS for
+a service where users read and write their data to your storage account. Accounts that store user data
+have to typical designs, a front-end proxy service and
+a lightweight or SAS provider service. In the first design clients upload and download data through a front end proxy
+service which performs authentication. This front-end proxy service has
+the advantage of allowing validation of business rules. And if the service must handle
+large amounts of data or high volume transactions,
+you might find it complicated or expensive to scale this
+service to match demand. A lightweight service
+authenticates the client as needed. Next, it generates an SAS. After receiving the SAS the client can
+access storage account resources directly. Finally, the SAS defines the client's
+permissions and access interval. It reduces the need to write all data
+through the front-end proxy service.
